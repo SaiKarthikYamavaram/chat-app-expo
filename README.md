@@ -8,7 +8,12 @@ A simple expo demo app to create groups
 &nbsp;<img src="/Screenshots/home_with_group.jpg"   width="200"  > &nbsp;<img src="/Screenshots/group_description.jpg"   width="200"  >
 &nbsp;<img src="/Screenshots/offline.jpg"   width="200"  >
 
-# demo
+# Output
+Here is the APK for android if you want to try this out!!
+
+[Android APK](/output/chat-app-26db6eb9624e4cfc9fcd5ab86ec2719d-signed.apk) 
+
+# Demo
 
 Complete App Functionality
 
@@ -23,7 +28,7 @@ https://user-images.githubusercontent.com/37267369/141817734-c5ca4604-c96a-47be-
 
 These instructions are for Seting up Project and Running it on your Local Machine
 
-You'll need [yarn](https://classic.yarnpkg.com/en/ "Yarn documentation") and [Expo](https://docs.expo.dev/ "Expo documentation") and [Git](https://git-scm.com/ "Git Homepage") installed locally on your computer
+You'll need [yarn](https://classic.yarnpkg.com/en/ "Yarn documentation") and [Git](https://git-scm.com/ "Git Homepage") installed locally on your computer
 
 You'll need [Expo Go](https://expo.dev/client "Expo mobile Client") installed on your mobile device
 
