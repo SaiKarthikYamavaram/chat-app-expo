@@ -11,7 +11,7 @@ A simple expo demo app to create groups
 # Output
 Here is the APK for android if you want to try this out!!
 
-[Android APK](/output) 
+[Android APK](/output/chat-app-26db6eb9624e4cfc9fcd5ab86ec2719d-signed.apk) 
 
 # Demo
 
