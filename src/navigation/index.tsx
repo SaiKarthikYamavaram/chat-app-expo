@@ -8,32 +8,31 @@ import OfflineScreen from "../screens/OfflineScreen/OfflineScreen";
 import NAVIGATION from "./../constants/navigation";
 import NetInfo from "@react-native-community/netinfo";
 import ChatListScreen from "./../screens/ChatListScreen/ChatListScreen";
-import ChatDetailsScreen from './../screens/ChatDetailsScreen/ChatDetailsScreen';
+import ChatDetailsScreen from "./../screens/ChatDetailsScreen/ChatDetailsScreen";
 
 const RootStack = createStackNavigator();
 
-
 const MyTheme = {
 	...DefaultTheme,
-	dark:true,
+	dark: true,
 	colors: {
-	  ...DefaultTheme.colors,
-	  background : '#030304',
+		...DefaultTheme.colors,
+		background: "#030304",
 	},
-  };
-  
+};
 
 const RootNavigator = () => {
 	const [isConnectedToInternet, setIsConnectedToInternet] = useState(true);
 
 	useEffect(() => {
 		const unsubscribe = NetInfo.addEventListener((state) => {
-			if (state.type === "none") setIsConnectedToInternet(false);
+			if (state.type === "none" || state.type === "unknown")
+				setIsConnectedToInternet(false);
 			else setIsConnectedToInternet(true);
 			// console.log("offline connection change")
 		});
 
-		return ()=>unsubscribe();
+		return () => unsubscribe();
 	}, []);
 	return (
 		<NavigationContainer>
